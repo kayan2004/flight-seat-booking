@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Seat Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title" class="title">Flight Seat Booking</h1>
+    </header>
+    <main>
+      <section class="flight__container">
+        <div class="selection__container">
+          <div class="select__container">
+            <label for="from" class="label">From: </label>
+            <select class="select" name="" id="from">
+              <option value="">Beirut, Lebanon</option>
+            </select>
+          </div>
+          <div class="select__container">
+            <label for="dest" class="label">Destination: </label>
+            <select name="dest" id="dest">
+              <option value="1000">Paris, France</option>
+              <option value="2500">NYC, USA</option>
+              <option value="1500">London, UK</option>
+            </select>
+          </div>
+          <div class="select__container">
+            <label for="from" class="label">Date: </label>
+            <input type="date" name="" id="" />
+          </div>
+        </div>
+        <div class="seat__menu">
+          <ul class="seat__menu-list">
+            <li>
+              <div class="seat"></div>
+              <small class="desc">Available</small>
+            </li>
+            <li>
+              <div class="seat selected"></div>
+              <small class="desc">Selected</small>
+            </li>
+            <li>
+              <div class="seat unavailable"></div>
+              <small class="desc">Unavailable</small>
+            </li>
+          </ul>
+        </div>
+        <div class="plane__container">
+          <div class="plane">
+            <div class="seat__container">
+              <div class="seat__row">
+                <div class="seat unavailable"></div>
+                <div class="seat unavailable"></div>
+                <div class="seat middle"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat unavailable"></div>
+              </div>
+              <div class="seat__row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat middle"></div>
+                <div class="seat"></div>
+                <div class="seat unavailable"></div>
+                <div class="seat unavailable"></div>
+              </div>
+              <div class="seat__row">
+                <div class="seat"></div>
+                <div class="seat unavailable"></div>
+                <div class="seat middle"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat unavailable"></div>
+              </div>
+              <div class="seat__row">
+                <div class="seat unavailable"></div>
+                <div class="seat unavailable"></div>
+                <div class="seat middle unavailable"></div>
+                <div class="seat unavailable"></div>
+                <div class="seat unavailable"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="seat__row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat middle"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="seat__row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat middle"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="detail">
+            <span class="label">Price per seat: </span>
+            <span id="price-per-seat" class="price">1000</span>
+            <span class="currency">USD</span>
+          </div>
+          <div class="detail">
+            <span class="label">Seat selected: </span>
+            <span id="selected_count" class="price">0</span>
+            <span class="currency">seat</span>
+          </div>
+          <div class="detail">
+            <span class="label">Total payment: </span>
+            <span id="total_price" class="price">5000</span>
+            <span class="currency">USD</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
